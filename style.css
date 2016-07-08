@@ -1,0 +1,170 @@
+body {
+	background-color: #F7F7F7;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 200;
+}
+
+h3, h4, p {
+	font-weight: 200;
+}
+
+a {
+	color: black;
+}
+
+ul {
+    padding: 0px;
+}
+
+th, tr {
+    font-weight: 200;
+    height: 30px !important;
+    
+    background-color: #F7F7F7;
+    
+    border: 1px solid #E8E8E8;
+    border-collapse: collapse;
+}
+
+li {
+    list-style-type: none;
+}
+.clearBoth {
+    clear: both;
+}
+
+#mother-space {
+	width: 50vw;
+	height: auto;
+
+	min-width: 400px;
+	min-height: 400px;
+
+	background-color: white;
+	border: solid 1px #E8E8E8;
+	border-radius: 5px;
+
+	margin-left: auto;
+	margin-right: auto;
+
+	padding: 30px;
+
+	text-align: center;
+}
+
+#ac-logo {
+	width: 100%;
+	height: 100px;
+
+	text-align: center;
+}
+
+.split {
+	width: 90%;
+	height: 1px;
+
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+
+	background-color: #E8E8E8;
+}
+
+.inputBox {
+	height: 20px;
+
+	padding: 10px;
+
+	border: solid 1px #E8E8E8;
+	border-radius: 5px;
+
+	text-align: center;
+}
+
+.submitButton {
+	height: 40px;
+	width: 195px;
+
+	border: solid 1px #DEDEDE;
+	border-radius: 5px;
+
+	background-color: #E8E8E8;
+	color: #000;
+	
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+.submitButton:hover {
+	background-color: #000;
+	color: #fff;
+}
+
+#musicList {
+    list-style-type: none;
+    width: 100%;
+    margin-top: 0px;
+    height: 100%;
+}
+
+#example-1-1 {
+     font-weight: 200;
+
+    border: 0px solid #E8E8E8;
+    border-collapse: collapse;
+}
+
+.musicListItem {
+    width: 100%;
+    font-weight: 200;
+    min-height: 40px;
+    
+    background-color: #fff;
+
+    border: 1px solid #E8E8E8;
+    border-collapse: collapse;
+}
+
+.musicListItem:hover {
+    background-color: #F7F7F7;
+}
+
+.musicListItemInfo {
+    float: left;
+    line-height:40px;
+    height: 100%;
+    overflow: hidden;              /* "overflow" value must be different from "visible" */ 
+
+  text-overflow:    ellipsis;
+}
+
+#musicName {
+    width: 28%;
+}
+
+#musicArtistName {
+    width: 23%;
+}
+
+#musicGenre {
+    width: 20%;
+}
+
+#musicLink {
+    width: 27%;
+}
+
+.fieldTable {
+    width: 100%;
+    font-weight: 200;
+    height: 100%;
+    min-height: 40px;
+     
+    border: 1px solid #E8E8E8;
+    border-collapse: collapse;
+}
+
