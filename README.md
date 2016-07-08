@@ -25,7 +25,7 @@ Feito com :heart: utilizando alguma coisa.
 - [Igor Octaviano](https://github.com/igoroctaviano)
 - João Victor
 - [Pedro]()
-- [Rafael]()
+- [Rafael](https://github.com/rafaelcamaram)
 - [Fellipe]()
 - [Luan]()
 - [Gabriel]()
