@@ -29,172 +29,35 @@
 </head>
 	
 <body>
-	<div id="mother-space" class="col-xs-12 col-sm-6 col-sm-offset-3">
-		<div id="ac-logo">
-			<img src="http://minastestingconference.com.br/images/demo/apoiadores/avenuecode.png">
-            <br />
-            <span>Funday Music</span>
-		</div>
-
-		<div class="split"></div>
-
-        <p>Fill in the fields below to add a song to playlist:<br /> <strong>CAMARA</strong></p>
-
-
-        <input class="inputBox col-xs-8 col-xs-offset-2" type="text" name="musicName" placeholder="Music name" required>
-
-
-        <input class="inputBox col-xs-8 col-xs-offset-2" type="text" name="artistName" placeholder="Artist name" required>
-
-        <select class="inputBox col-xs-8 col-xs-offset-2 col-sm-3 col-sm-offset-2">
-            <option value="default">Genr</option>
-            <option value="samba">Samba</option>
-            <option value="rock">Rock</option>
-            <option value="pop">Pop</option>
-            <option value="nacional">Nacional</option>
-        </select>
-        
-        <a href="showPlaylist.html"><button class="submitButton inputBox col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-1" onclick="insertMusic()" >Insert Music</button></a>
-        
-
-
-		<div id="playlist" style="display: none;">
-			<p style="margin-left: 30px; margin-right:30px; margin-bottom: 50px;">Here you can see all the musics that was inserted on your system.</p>
-
-			<button class="submitButton" style="margin-bottom: 10px; margin-top: -20px;" onclick="insertMusic()">Insert New Music</button>
-        
-            
-            <!-- Inicio -->
-            <table style="width:100%">
-                <tr class="fieldTable">
-                    <th width="30%">Music Name</td>
-                    <th width="23%">Artist</td> 
-                    <th width="20%;">Genre</td>
-                    <th width="27%;">Video Link</td>
-                </tr>
-            </table>
-
-            <div id="example-1-1" style="width:100%">
-                <ul class="sortable-list ui-sortable">
-                    <li class="musicListItem">
-                        <div id="musicName" class="musicListItemInfo">
-                            We are the Champions
-                        </div>
-                        <div id="musicArtistName" class="musicListItemInfo">
-                            Queen
-                        </div>
-                        <div id="musicGenre" class="musicListItemInfo">
-                            Rock
-                        </div>
-                        <div id="musicLink" class="musicListItemInfo">
-                            Youtube
-                        </div>
-                    </li>
-                    <li class="musicListItem">
-                        <div id="musicName" class="musicListItemInfo">
-                            Classic
-                        </div>
-                        <div id="musicArtistName" class="musicListItemInfo">
-                            MKTO
-                        </div>
-                        <div id="musicGenre" class="musicListItemInfo">
-                            Pop Rock
-                        </div>
-                        <div id="musicLink" class="musicListItemInfo">
-                            Youtube
-                        </div>
-                    </li>
-                    <li class="musicListItem">
-                        <div id="musicName" class="musicListItemInfo">
-                            Piloto Automatico
-                        </div>
-                        <div id="musicArtistName" class="musicListItemInfo">
-                            Supercombo
-                        </div>
-                        <div id="musicGenre" class="musicListItemInfo">
-                            Nacional
-                        </div>
-                        <div id="musicLink" class="musicListItemInfo">
-                            Youtube
-                        </div>
-                    </li>
-                    <li class="musicListItem">
-                        <div id="musicName" class="musicListItemInfo">
-                            Afraid of the Dark
-                        </div>
-                        <div id="musicArtistName" class="musicListItemInfo">
-                            MKTO
-                        </div>
-                        <div id="musicGenre" class="musicListItemInfo">
-                            Pop Rock
-                        </div>
-                        <div id="musicLink" class="musicListItemInfo">
-                            Youtube
-                        </div>
-                    </li>
-                </ul>
+    <div id="wrapper">
+        <div id="mother-space" class="col-xs-12 col-sm-5 col-md-3 col-md-offset-0">
+            <div id="ac-logo">
+                <img src="http://minastestingconference.com.br/images/demo/apoiadores/avenuecode.png">
+                <br />
+                <span>Funday Music</span>
             </div>
-            <!-- Fim -->
-          
-            <table style="width:100%">
-                <tr class="fieldTable">
-                    <th width="30%">Music Name</td>
-                    <th width="23%">Artist</td> 
-                    <th width="20%;">Genre</td>
-                    <th width="27%;">Video Link</td>
-                </tr>
-            </table>
 
-            <div id="example-1-1" style="width:100%">
-                
-				<ul id="musicList" class="sortable-list">
-                    <li class="musicListItem">
-                        <div id="musicName" class="musicListItemInfo">Sem Hora</div>
-                        <div id="musicArtistName" class="musicListItemInfo">Lagum</div>
-                        <div id="musicGenre" class="musicListItemInfo">Samba</div>
-                        <div id="musicLink" class="musicListItemInfo">YouTube</div>
-                    </li>
-                    <li class="clearBoth"></li>
-                    <li class="musicListItem">
-                        <div id="musicName" class="musicListItemInfo">Piloto Automatico</div>
-                        <div id="musicArtistName" class="musicListItemInfo">Supercombo</div>
-                        <div id="musicGenre" class="musicListItemInfo">Nacional</div>
-                        <div id="musicLink" class="musicListItemInfo">YouTube</div>
-                    </li>
-                     <li class="clearBoth"></li>
-                    <li class="musicListItem">
-                        <div id="musicName" class="musicListItemInfo">Bad Girls</div>
-                        <div id="musicArtistName" class="musicListItemInfo">MKTO</div>
-                        <div id="musicGenre" class="musicListItemInfo">Pop Rock</div>
-                        <div id="musicLink" class="musicListItemInfo">YouTube</div>
-                    </li>
-                    <li class="clearBoth"></li>
-                    <li class="musicListItem">
-                        <div id="musicName" class="musicListItemInfo">Dangerous Woman</div>
-                        <div id="musicArtistName" class="musicListItemInfo">Ariana Grande</div>
-                        <div id="musicGenre" class="musicListItemInfo">Pop Music</div>
-                        <div id="musicLink" class="musicListItemInfo">YouTube</div>
-                    </li>
-                    <li class="musicListItem">
-                        <div id="musicName" class="musicListItemInfo">We Are The Champions</div>
-                        <div id="musicArtistName" class="musicListItemInfo">Queen</div>
-                        <div id="musicGenre" class="musicListItemInfo">Classic</div>
-                        <div id="musicLink" class="musicListItemInfo">YouTube</div>
-                    </li>
-				</ul>
-			</div>
-		</div>
-	</div>
+            <div class="split"></div>
+
+            <p>Fill in the fields below to add a song to playlist:<br /> <strong>CAMARA</strong></p>
 
 
-<!-- Example JavaScript files -->
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+            <input class="inputBox col-xs-8 col-xs-offset-2" type="text" name="musicName" placeholder="Music name" required>
 
-<!-- Example jQuery code (JavaScript)  -->
-<script type="text/javascript">
-    $(document).ready(function(){ $('#example-1-1 .sortable-list').sortable(); });
-</script>
 
+            <input class="inputBox col-xs-8 col-xs-offset-2" type="text" name="artistName" placeholder="Artist name" required>
+
+            <select class="inputBox col-xs-8 col-xs-offset-2 col-sm-3 col-sm-offset-2">
+                <option value="default">Genr</option>
+                <option value="samba">Samba</option>
+                <option value="rock">Rock</option>
+                <option value="pop">Pop</option>
+                <option value="nacional">Nacional</option>
+            </select>
+
+            <a href="showPlaylist.html"><button class="submitButton inputBox col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-1" onclick="insertMusic()" >Insert Music</button></a>
+
+        </div>
+    </div>
 </body>
 </html>

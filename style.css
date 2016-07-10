@@ -1,5 +1,11 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto:400,700';
 
+/* ------------ Nativos ------------ */
+html, body {
+  height: 100%;
+  min-height: 100%;
+}
+
 body {
 	background-image: url(images/bg2.png);
 	font-family: 'Lato', sans-serif;
@@ -7,15 +13,16 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-}
 
-h3, h4, p {
-	font-weight: 1.5em;
 }
 
 a {
 	color: black;
     text-decoration: none;
+}
+
+h3, h4, p {
+	font-weight: 1.5em;
 }
 
 th, tr {
@@ -37,92 +44,7 @@ tr:hover {
     background-color: #F7F7F7;
 }
 
-.clearBoth {
-    clear: both;
-}
-
-#mother-space {
-	background-color: white;
-	border: solid 1px #E8E8E8;
-	border-radius: 5px;
-    
-    margin-top: 6%;
-    margin-bottom: 5%;
-	padding-top: 30px;
-    padding-bottom: 30px;
-
-	text-align: center;
-}
-
-#ac-logo {
-	width: 100%;
-	height: 100px;
-
-	text-align: center;
-}
-
-#ac-logo > span {
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    font-size: 1.1em;
-}
-
-.split {
-	width: 90%;
-	height: 1px;
-
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 50px;
-	margin-bottom: 30px;
-
-	background-color: #E8E8E8;
-}
-
-.flexbox-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-
-#playlist {
-    display: none;
-}
-
-.inputBox {
-	height: 40px;
-
-	padding: 10px;
-
-	border: solid 1px #E8E8E8;
-	border-radius: 5px;
-    
-    margin-bottom: 15px;
-	text-align: center;
-    
-}
-
-.submitButton {
-	height: 40px;
-
-	border: solid 1px #DEDEDE;
-	border-radius: 5px;
-
-	background-color: #E8E8E8;
-	color: #000;
-	
-	text-align: center;
-	text-transform: uppercase;
-	font-size: 12px;
-}
-
-.submitButton:hover {
-	background-color: #000;
-	color: #fff;
-}
-
+/* ------------ Classes ------------- */
 .button {
     height: 30px;
     
@@ -142,6 +64,102 @@ tr:hover {
     color: #fff;
     color: #fff;
 }
+
+.clearBoth {
+    clear: both;
+}
+
+.flexbox-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.inputBox {
+	height: 40px;
+
+	padding: 10px;
+
+	border: solid 1px #E8E8E8;
+	border-radius: 5px;
+    
+    margin-bottom: 15px;
+	text-align: center;
+    
+}
+
+.split {
+	width: 90%;
+	height: 1px;
+
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	margin-bottom: 30px;
+
+	background-color: #E8E8E8;
+}
+
+.submitButton {
+	height: 40px;
+
+	border: solid 1px #DEDEDE;
+	border-radius: 5px;
+
+	background-color: #E8E8E8;
+	color: #000;
+	
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.submitButton:hover {
+	background-color: #000;
+	color: #fff;
+}
+
+/* ---------------- IDs ---------------- */
+
+#ac-logo {
+	width: 100%;
+	height: 100px;
+
+	text-align: center;
+}
+
+#ac-logo > span {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+#mother-space {
+    
+    min-width: 405px;
+    min-width: 405px;
+    min-height: 405px;
+
+	background-color: white;
+	border: solid 1px #E8E8E8;
+
+
+	padding-top: 30px;
+    padding-bottom: 30px;
+    
+	text-align: center;   
+}
+
+@media (max-width: 992px) {
+    #mother-space {
+        height: 100%;
+        min-height: 100%;
+    }
+}
+
 #musicList {
     list-style-type: none;
     width: 100%;
@@ -149,56 +167,28 @@ tr:hover {
     height: 100%;
 }
 
-#example-1-1 {
-     font-weight: 200;
-
-    border: 0px solid #E8E8E8;
-    border-collapse: collapse;
+#playlist {
+    display: none;
 }
 
-.musicListItem {
+#wrapper {
     width: 100%;
-    font-weight: 200;
-    min-height: 40px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     
-    background-color: #fff;
-
-    border: 1px solid #E8E8E8;
-    border-collapse: collapse;
+    min-height: 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
 }
 
-.musicListItemInfo {
-    float: left;
-    line-height:40px;
-    height: 100%;
-    overflow: hidden;              /* "overflow" value must be different from "visible" */ 
 
-  text-overflow:    ellipsis;
-}
 
-#musicName {
-    width: 28%;
-}
-
-#musicArtistName {
-    width: 23%;
-}
-
-#musicGenre {
-    width: 20%;
-}
-
-#musicLink {
-    width: 27%;
-}
-
-.fieldTable {
-    width: 100%;
-    font-weight: 200;
-    height: 100%;
-    min-height: 40px;
-     
-    border: 1px solid #E8E8E8;
-    border-collapse: collapse;
-}
 
