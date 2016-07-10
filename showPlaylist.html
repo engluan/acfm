@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AC-FM</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <!-- Boot -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    
+    <script type="text/javascript">
+        function getPlaylist() {
+            var playlist = document.getElementById("playlist");
+            playlist.style.display = "inline";
+        }
+    </script>
+
+</head>
+	
+<body>
+	<div id="mother-space" class="col-xs-12 col-sm-6 col-sm-offset-3">
+		<div id="ac-logo">
+			<img src="http://minastestingconference.com.br/images/demo/apoiadores/avenuecode.png">
+            <br />
+            <span>Funday Music</span>
+		</div>
+
+		<div class="split"></div>
+
+        <p>Select one of your playlists:</p>
+
+        <select class="inputBox col-xs-8 col-xs-offset-2">
+            <option value="default">Playlist</option>
+            <option value="samba">Músicas Sertanejas</option>
+            <option value="rock">Poprock Music</option>
+            <option value="pop">TOP 100 Brasil</option>
+            <option value="nacional">Câmara Playlist</option>
+        </select>
+        <br />
+        <button class="submitButton inputBox inputBox col-xs-8 col-xs-offset-2" onclick="getPlaylist()" >Get Playlist</button>
+    
+        <div id="playlist">
+            <a href="insertMusic.html"><button class="button col-xs-5 col-xs-offset-0">Add Music</button></a>
+
+            <button class="button col-xs-5 col-xs-offset-2" onclick="insertMusic()">Edit Playlist</button>
+
+            <!-- teste -->
+            <div style="width: 100%;height: 500px;overflow:auto; margin-top:135px;">
+                <table class="col-xs-12 col-xs-offset-0" style="height: 50px;">
+                <tr>
+                    <th>Music Name</th>
+                    <th>Artist</th>
+                    <th style="padding-left:20px;padding-right:20px;">Options</th>
+                </tr>
+
+                <tr>
+                    <td>Sem Hora</td>
+                    <td>Lagum</td>
+                    <td>
+                        <a href="#">
+                            <img src="images/add.png" width="15px" height="15px">
+                        </a>
+                        <a href="#">
+                            <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                        </a>
+                        <a href="#">
+                            <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                        </a>
+                        <a href="#">
+                            <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                        </a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Piloto Automático</td>
+                    <td>Supercombo</td>
+                    <td>
+                        <a href="#">
+                            <img src="images/add.png" width="15px" height="15px">
+                        </a>
+                        <a href="#">
+                            <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                        </a>
+                        <a href="#">
+                            <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                        </a>
+                        <a href="#">
+                            <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                        </a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Player in C - Robin Schulz</td>
+                    <td>Lilly Wood and The Prick</td>
+                    <td>
+                        <a href="#">
+                            <img src="images/add.png" width="15px" height="15px">
+                        </a>
+                        <a href="#">
+                            <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                        </a>
+                        <a href="#">
+                            <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                        </a>
+                        <a href="#">
+                            <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                        </a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Afraid of the Dark</td>
+                    <td>MKTO</td>
+                    <td>
+                        <a href="#">
+                            <img src="images/add.png" width="15px" height="15px">
+                        </a>
+                        <a href="#">
+                            <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                        </a>
+                        <a href="#">
+                            <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                        </a>
+                        <a href="#">
+                            <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                        </a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Mama Said</td>
+                    <td>Lukas Graham</td>
+                    <td>
+                        <a href="#">
+                            <img src="images/add.png" width="15px" height="15px">
+                        </a>
+                        <a href="#">
+                            <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                        </a>
+                        <a href="#">
+                            <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                        </a>
+                        <a href="#">
+                            <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                        </a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Sem Hora</td>
+                    <td>Lagum</td>
+                    <td>
+                        <a href="#">
+                            <img src="images/add.png" width="15px" height="15px">
+                        </a>
+                        <a href="#">
+                            <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                        </a>
+                        <a href="#">
+                            <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                        </a>
+                        <a href="#">
+                            <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                        </a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Piloto Automático</td>
+                    <td>Supercombo</td>
+                    <td>
+                        <a href="#">
+                            <img src="images/add.png" width="15px" height="15px">
+                        </a>
+                        <a href="#">
+                            <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                        </a>
+                        <a href="#">
+                            <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                        </a>
+                        <a href="#">
+                            <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                        </a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Player in C - Robin Schulz</td>
+                    <td>Lilly Wood and The Prick</td>
+                    <td>
+                        <a href="#">
+                            <img src="images/add.png" width="15px" height="15px">
+                        </a>
+                        <a href="#">
+                            <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                        </a>
+                        <a href="#">
+                            <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                        </a>
+                        <a href="#">
+                            <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                        </a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Afraid of the Dark</td>
+                    <td>MKTO</td>
+                    <td>
+                        <a href="#">
+                            <img src="images/add.png" width="15px" height="15px">
+                        </a>
+                        <a href="#">
+                            <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                        </a>
+                        <a href="#">
+                            <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                        </a>
+                        <a href="#">
+                            <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                        </a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Mama Said</td>
+                    <td>Lukas Graham</td>
+                    <td>
+                        <a href="#">
+                            <img src="images/add.png" width="15px" height="15px">
+                        </a>
+                        <a href="#">
+                            <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                        </a>
+                        <a href="#">
+                            <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                        </a>
+                        <a href="#">
+                            <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                        </a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Sem Hora</td>
+                    <td>Lagum</td>
+                    <td>
+                        <a href="#">
+                            <img src="images/add.png" width="15px" height="15px">
+                        </a>
+                        <a href="#">
+                            <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                        </a>
+                        <a href="#">
+                            <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                        </a>
+                        <a href="#">
+                            <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                        </a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Piloto Automático</td>
+                    <td>Supercombo</td>
+                    <td>
+                        <a href="#">
+                            <img src="images/add.png" width="15px" height="15px">
+                        </a>
+                        <a href="#">
+                            <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                        </a>
+                        <a href="#">
+                            <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                        </a>
+                        <a href="#">
+                            <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                        </a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Player in C - Robin Schulz</td>
+                    <td>Lilly Wood and The Prick</td>
+                    <td>
+                        <a href="#">
+                            <img src="images/add.png" width="15px" height="15px">
+                        </a>
+                        <a href="#">
+                            <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                        </a>
+                        <a href="#">
+                            <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                        </a>
+                        <a href="#">
+                            <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                        </a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Afraid of the Dark</td>
+                    <td>MKTO</td>
+                    <td>
+                        <a href="#">
+                            <img src="images/add.png" width="15px" height="15px">
+                        </a>
+                        <a href="#">
+                            <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                        </a>
+                        <a href="#">
+                            <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                        </a>
+                        <a href="#">
+                            <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                        </a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Mama Said</td>
+                    <td>Lukas Graham</td>
+                    <td>
+                        <a href="#">
+                            <img src="images/add.png" width="15px" height="15px">
+                        </a>
+                        <a href="#">
+                            <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                        </a>
+                        <a href="#">
+                            <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                        </a>
+                        <a href="#">
+                            <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                        </a>
+                    </td>
+                </tr>
+            </table>
+            </div>
+        </div>
+
+	</div>
+
+
+<!-- Example JavaScript files -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+
+<!-- Example jQuery code (JavaScript)  -->
+<script type="text/javascript">
+    $(document).ready(function(){ $('#example-1-1 .sortable-list').sortable(); });
+</script>
+
+</body>
+</html>

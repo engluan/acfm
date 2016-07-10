@@ -1,55 +1,54 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:400,700';
+
 body {
-	background-color: #F7F7F7;
-	margin-top: 30px;
-	margin-bottom: 30px;
+	background-image: url(images/bg.png);
 	font-family: 'Lato', sans-serif;
 	font-weight: 200;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 h3, h4, p {
-	font-weight: 200;
+	font-weight: 1.5em;
 }
 
 a {
 	color: black;
-}
-
-ul {
-    padding: 0px;
+    text-decoration: none;
 }
 
 th, tr {
     font-weight: 200;
     height: 30px !important;
     
-    background-color: #F7F7F7;
+    background-color: #FFF;
     
     border: 1px solid #E8E8E8;
     border-collapse: collapse;
+    text-align: center;
 }
 
-li {
-    list-style-type: none;
+th {
+    background-color: #F7F7F7;
 }
+
+tr:hover {
+    background-color: #F7F7F7;
+}
+
 .clearBoth {
     clear: both;
 }
 
 #mother-space {
-	width: 50vw;
-	height: auto;
-
-	min-width: 400px;
-	min-height: 400px;
-
 	background-color: white;
 	border: solid 1px #E8E8E8;
 	border-radius: 5px;
-
-	margin-left: auto;
-	margin-right: auto;
-
-	padding: 30px;
+    
+    margin-top: 6%;
+    margin-bottom: 5%;
+	padding-top: 30px;
+    padding-bottom: 30px;
 
 	text-align: center;
 }
@@ -61,32 +60,51 @@ li {
 	text-align: center;
 }
 
+#ac-logo > span {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
 .split {
 	width: 90%;
 	height: 1px;
 
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 30px;
+	margin-top: 50px;
 	margin-bottom: 30px;
 
 	background-color: #E8E8E8;
 }
 
+.flexbox-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+#playlist {
+    display: none;
+}
+
 .inputBox {
-	height: 20px;
+	height: 40px;
 
 	padding: 10px;
 
 	border: solid 1px #E8E8E8;
 	border-radius: 5px;
-
+    
+    margin-bottom: 15px;
 	text-align: center;
+    
 }
 
 .submitButton {
 	height: 40px;
-	width: 195px;
 
 	border: solid 1px #DEDEDE;
 	border-radius: 5px;
@@ -104,6 +122,25 @@ li {
 	color: #fff;
 }
 
+.button {
+    height: 30px;
+    
+    border: solid 1px #DEDEDE;
+	border-radius: 5px;
+    
+    background-color: #FFF;
+	color: #000;
+	
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+.button:hover {
+    background-color: #000;
+    color: #fff;
+    color: #fff;
+}
 #musicList {
     list-style-type: none;
     width: 100%;
@@ -127,10 +164,6 @@ li {
 
     border: 1px solid #E8E8E8;
     border-collapse: collapse;
-}
-
-.musicListItem:hover {
-    background-color: #F7F7F7;
 }
 
 .musicListItemInfo {
