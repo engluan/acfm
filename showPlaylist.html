@@ -4,8 +4,12 @@
 	<title>AC-FM</title>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     
     <!-- Boot -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -34,25 +38,25 @@
             <div class="split"></div>
 
             <p>Select one of your playlists:</p>
-
-            <select class="inputBox col-xs-8 col-xs-offset-2">
-                <option value="default">Playlist</option>
-                <option value="samba">Músicas Sertanejas</option>
+            
+            <select class="inputBox col-xs-8 col-xs-offset-2" required>
+                <option value="samba" selected>Músicas Sertanejas</option>
                 <option value="rock">Poprock Music</option>
                 <option value="pop">TOP 100 Brasil</option>
                 <option value="nacional">Câmara Playlist</option>
             </select>
-            
+
             <br />
-            
+
             <button class="submitButton col-xs-8 col-xs-offset-2" onclick="getPlaylist()" >Get Playlist</button>
+
             
 
             <div id="playlist">
-                <a href="insertMusic.html"><button class="button col-xs-5 col-xs-offset-1" style="margin-right:10px;">Add Music</button></a>
+                <button class="button col-xs-5 col-xs-offset-1" style="margin-right:10px;" data-toggle="modal" data-target="#insertModal">Add Music</button>
 
-                <button class="button col-xs-5 col-xs-offset-0" onclick="insertMusic()">Edit Playlist</button>
-                <!-- teste -->
+                <button class="button col-xs-5 col-xs-offset-0" data-toggle="modal" data-target="#deleteModal">Delete Playlist</button>
+               
                 <div style="width: 100%;height: 500px;overflow:auto; margin-top:135px;">
                     <table class="col-xs-12 col-xs-offset-0" style="height: 50px;">
                     <tr>
@@ -66,16 +70,16 @@
                         <td>Lagum</td>
                         <td>
                             <a href="#">
-                                <img src="images/add.png" width="15px" height="15px">
+                                <i class="material-icons iconTable">clear</i>
                             </a>
                             <a href="#">
-                                <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                                <i class="material-icons iconTable">create</i>
                             </a>
                             <a href="#">
-                                <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                                <i class="material-icons iconTable">vertical_align_bottom</i>
                             </a>
                             <a href="#">
-                                <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                                <i class="material-icons iconTable">vertical_align_top</i>
                             </a>
                         </td>
                     </tr>
@@ -85,16 +89,16 @@
                         <td>Supercombo</td>
                         <td>
                             <a href="#">
-                                <img src="images/add.png" width="15px" height="15px">
+                                <i class="material-icons iconTable">clear</i>
                             </a>
                             <a href="#">
-                                <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                                <i class="material-icons iconTable">create</i>
                             </a>
                             <a href="#">
-                                <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                                <i class="material-icons iconTable">vertical_align_bottom</i>
                             </a>
                             <a href="#">
-                                <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                                <i class="material-icons iconTable">vertical_align_top</i>
                             </a>
                         </td>
                     </tr>
@@ -104,16 +108,16 @@
                         <td>Lilly Wood and The Prick</td>
                         <td>
                             <a href="#">
-                                <img src="images/add.png" width="15px" height="15px">
+                                <i class="material-icons iconTable">clear</i>
                             </a>
                             <a href="#">
-                                <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                                <i class="material-icons iconTable">create</i>
                             </a>
                             <a href="#">
-                                <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                                <i class="material-icons iconTable">vertical_align_bottom</i>
                             </a>
                             <a href="#">
-                                <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                                <i class="material-icons iconTable">vertical_align_top</i>
                             </a>
                         </td>
                     </tr>
@@ -123,16 +127,16 @@
                         <td>MKTO</td>
                         <td>
                             <a href="#">
-                                <img src="images/add.png" width="15px" height="15px">
+                                <i class="material-icons iconTable">clear</i>
                             </a>
                             <a href="#">
-                                <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                                <i class="material-icons iconTable">create</i>
                             </a>
                             <a href="#">
-                                <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                                <i class="material-icons iconTable">vertical_align_bottom</i>
                             </a>
                             <a href="#">
-                                <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                                <i class="material-icons iconTable">vertical_align_top</i>
                             </a>
                         </td>
                     </tr>
@@ -142,16 +146,16 @@
                         <td>Lukas Graham</td>
                         <td>
                             <a href="#">
-                                <img src="images/add.png" width="15px" height="15px">
+                                <i class="material-icons iconTable">clear</i>
                             </a>
                             <a href="#">
-                                <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                                <i class="material-icons iconTable">create</i>
                             </a>
                             <a href="#">
-                                <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                                <i class="material-icons iconTable">vertical_align_bottom</i>
                             </a>
                             <a href="#">
-                                <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                                <i class="material-icons iconTable">vertical_align_top</i>
                             </a>
                         </td>
                     </tr>
@@ -161,16 +165,16 @@
                         <td>Lagum</td>
                         <td>
                             <a href="#">
-                                <img src="images/add.png" width="15px" height="15px">
+                                <i class="material-icons iconTable">clear</i>
                             </a>
                             <a href="#">
-                                <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                                <i class="material-icons iconTable">create</i>
                             </a>
                             <a href="#">
-                                <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                                <i class="material-icons iconTable">vertical_align_bottom</i>
                             </a>
                             <a href="#">
-                                <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                                <i class="material-icons iconTable">vertical_align_top</i>
                             </a>
                         </td>
                     </tr>
@@ -180,16 +184,16 @@
                         <td>Supercombo</td>
                         <td>
                             <a href="#">
-                                <img src="images/add.png" width="15px" height="15px">
+                                <i class="material-icons iconTable">clear</i>
                             </a>
                             <a href="#">
-                                <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                                <i class="material-icons iconTable">create</i>
                             </a>
                             <a href="#">
-                                <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                                <i class="material-icons iconTable">vertical_align_bottom</i>
                             </a>
                             <a href="#">
-                                <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                                <i class="material-icons iconTable">vertical_align_top</i>
                             </a>
                         </td>
                     </tr>
@@ -199,16 +203,16 @@
                         <td>Lilly Wood and The Prick</td>
                         <td>
                             <a href="#">
-                                <img src="images/add.png" width="15px" height="15px">
+                                <i class="material-icons iconTable">clear</i>
                             </a>
                             <a href="#">
-                                <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                                <i class="material-icons iconTable">create</i>
                             </a>
                             <a href="#">
-                                <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                                <i class="material-icons iconTable">vertical_align_bottom</i>
                             </a>
                             <a href="#">
-                                <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                                <i class="material-icons iconTable">vertical_align_top</i>
                             </a>
                         </td>
                     </tr>
@@ -218,16 +222,16 @@
                         <td>MKTO</td>
                         <td>
                             <a href="#">
-                                <img src="images/add.png" width="15px" height="15px">
+                                <i class="material-icons iconTable">clear</i>
                             </a>
                             <a href="#">
-                                <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                                <i class="material-icons iconTable">create</i>
                             </a>
                             <a href="#">
-                                <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                                <i class="material-icons iconTable">vertical_align_bottom</i>
                             </a>
                             <a href="#">
-                                <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                                <i class="material-icons iconTable">vertical_align_top</i>
                             </a>
                         </td>
                     </tr>
@@ -237,16 +241,16 @@
                         <td>Lukas Graham</td>
                         <td>
                             <a href="#">
-                                <img src="images/add.png" width="15px" height="15px">
+                                <i class="material-icons iconTable">clear</i>
                             </a>
                             <a href="#">
-                                <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                                <i class="material-icons iconTable">create</i>
                             </a>
                             <a href="#">
-                                <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                                <i class="material-icons iconTable">vertical_align_bottom</i>
                             </a>
                             <a href="#">
-                                <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                                <i class="material-icons iconTable">vertical_align_top</i>
                             </a>
                         </td>
                     </tr>
@@ -256,16 +260,16 @@
                         <td>Lagum</td>
                         <td>
                             <a href="#">
-                                <img src="images/add.png" width="15px" height="15px">
+                                <i class="material-icons iconTable">clear</i>
                             </a>
                             <a href="#">
-                                <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                                <i class="material-icons iconTable">create</i>
                             </a>
                             <a href="#">
-                                <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                                <i class="material-icons iconTable">vertical_align_bottom</i>
                             </a>
                             <a href="#">
-                                <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                                <i class="material-icons iconTable">vertical_align_top</i>
                             </a>
                         </td>
                     </tr>
@@ -275,16 +279,16 @@
                         <td>Supercombo</td>
                         <td>
                             <a href="#">
-                                <img src="images/add.png" width="15px" height="15px">
+                                <i class="material-icons iconTable">clear</i>
                             </a>
                             <a href="#">
-                                <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                                <i class="material-icons iconTable">create</i>
                             </a>
                             <a href="#">
-                                <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                                <i class="material-icons iconTable">vertical_align_bottom</i>
                             </a>
                             <a href="#">
-                                <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                                <i class="material-icons iconTable">vertical_align_top</i>
                             </a>
                         </td>
                     </tr>
@@ -294,16 +298,16 @@
                         <td>Lilly Wood and The Prick</td>
                         <td>
                             <a href="#">
-                                <img src="images/add.png" width="15px" height="15px">
+                                <i class="material-icons iconTable">clear</i>
                             </a>
                             <a href="#">
-                                <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                                <i class="material-icons iconTable">create</i>
                             </a>
                             <a href="#">
-                                <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                                <i class="material-icons iconTable">vertical_align_bottom</i>
                             </a>
                             <a href="#">
-                                <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                                <i class="material-icons iconTable">vertical_align_top</i>
                             </a>
                         </td>
                     </tr>
@@ -313,16 +317,16 @@
                         <td>MKTO</td>
                         <td>
                             <a href="#">
-                                <img src="images/add.png" width="15px" height="15px">
+                                <i class="material-icons iconTable">clear</i>
                             </a>
                             <a href="#">
-                                <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                                <i class="material-icons iconTable">create</i>
                             </a>
                             <a href="#">
-                                <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                                <i class="material-icons iconTable">vertical_align_bottom</i>
                             </a>
                             <a href="#">
-                                <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                                <i class="material-icons iconTable">vertical_align_top</i>
                             </a>
                         </td>
                     </tr>
@@ -332,16 +336,16 @@
                         <td>Lukas Graham</td>
                         <td>
                             <a href="#">
-                                <img src="images/add.png" width="15px" height="15px">
+                                <i class="material-icons iconTable">clear</i>
                             </a>
                             <a href="#">
-                                <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                                <i class="material-icons iconTable">create</i>
                             </a>
                             <a href="#">
-                                <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                                <i class="material-icons iconTable">vertical_align_bottom</i>
                             </a>
                             <a href="#">
-                                <img src="images/add.png" width="15px" height="15px" style="margin-left:5px;">
+                                <i class="material-icons iconTable">vertical_align_top</i>
                             </a>
                         </td>
                     </tr>
@@ -352,5 +356,77 @@
         </div>
     </div>
 
+
+<!-- Modal Insert Music -->
+<div>
+    <div id="insertModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+          <div id="wrapper">
+        <div id="mother-space" class="col-xs-12 col-sm-6 col-sm-offset-0">
+            <div id="ac-logo">
+                <img src="http://minastestingconference.com.br/images/demo/apoiadores/avenuecode.png">
+                <br />
+                <span>Funday Music</span>
+            </div>
+
+            <div class="split"></div>
+
+            <p>Fill in the fields below to add a song to playlist:<br /> <strong>CAMARA</strong></p>
+
+
+            <input class="inputBox col-xs-8 col-xs-offset-2" type="text" name="musicName" placeholder="Music name" required>
+
+
+            <input class="inputBox col-xs-8 col-xs-offset-2" type="text" name="artistName" placeholder="Artist name" required>
+
+            <select class="inputBox col-xs-8 col-xs-offset-2 col-sm-3 col-sm-offset-2">
+                <option value="default">Genr</option>
+                <option value="samba">Samba</option>
+                <option value="rock">Rock</option>
+                <option value="pop">Pop</option>
+                <option value="nacional">Nacional</option>
+            </select>
+
+            <button class="submitButton inputBox col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-1" onclick="insertMusic()" data-dismiss="modal">Insert Music</button>
+
+        </div>
+
+      </div>
+    </div>
+
+    </div>
+</div>
+    
+<!-- Modal Delete Playlist -->
+<div>
+    <div id="deleteModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+          <div id="wrapper">
+        <div id="mother-space" class="col-xs-12 col-sm-6 col-sm-offset-0">
+            <div id="ac-logo">
+                <img src="http://minastestingconference.com.br/images/demo/apoiadores/avenuecode.png">
+                <br />
+                <span>Funday Music</span>
+            </div>
+
+            <div class="split"></div>
+
+            <p>Are you sure that you want to delete the playlist:<br /> <strong>CAMARA</strong> ?</p>
+
+            <button class="submitButton inputBox col-xs-8 col-xs-offset-2 col-sm-10 col-sm-offset-1" onclick="insertMusic()" data-dismiss="modal">Cancel</button>
+            
+            <button class="submitButton inputBox col-xs-8 col-xs-offset-2 col-sm-10 col-sm-offset-1 redBG" onclick="insertMusic()" data-dismiss="modal">Delete Playlist</button>
+
+        </div>
+
+      </div>
+    </div>
+
+</div>
+</div>
 </body>
 </html>

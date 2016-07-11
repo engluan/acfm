@@ -77,6 +77,17 @@ tr:hover {
   align-content: center;
 }
 
+.iconTable {
+    font-size: 1.2em !important;
+    margin-top: 8px;
+    margin-left: 3px;
+    color: #7D7D7D;
+}
+
+.iconTable:hover {
+    color: #000;
+}
+
 .inputBox {
 	height: 40px;
 
@@ -90,6 +101,14 @@ tr:hover {
     
 }
 
+.redBG {
+    background-color: darkred !important;
+    color: #fff !important;
+}
+
+.redBG:hover {
+    background-color: #610404 !important;
+}
 .split {
 	width: 90%;
 	height: 1px;
